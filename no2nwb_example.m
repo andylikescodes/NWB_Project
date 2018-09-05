@@ -39,9 +39,14 @@ end
 
 
 %adjust to where the data was downloaded to
-dataPath = 'r:\results\RecogMemory_MTL_release_v2\Data';
-stimFilesPath = 'r:\results\RecogMemory_MTL_release_v2\Code\dataRelease\stimFiles';
+dataPath = './RecogMemory_MTL_release_v2/Data';
+stimFilesPath = './RecogMemory_MTL_release_v2/Code/dataRelease/stimFiles';
 
+addpath(dataPath);
+addpath(stimFilesPath);
+addpath('./RecogMemory_MTL_release_v2/Code/dataRelease/helpers');
+addpath('./RecogMemory_MTL_release_v2/Code/dataRelease/analysisBehavior');
+addpath('./RecogMemory_MTL_release_v2/Code/dataRelease/newoldtask');
 % Get session definitions.
 [sessions, use] = defineNOsessions_release();
 

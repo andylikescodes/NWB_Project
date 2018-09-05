@@ -189,6 +189,8 @@ nwbFile.stimulus.presentation.(['images_' expStr]) = is;
 % experimentation machine. These should probably be changed to relative
 % paths to the location of the NWB file so these files can actually be
 % found.
+
+nwbFile.stimulus.presentation.(['images_' expStr]) = is;
 end
 
 function addEpochs(nwbFile, events, expStr, mode, mapping, stimIDs_shown_learn, stimIDs_shown_recog)
